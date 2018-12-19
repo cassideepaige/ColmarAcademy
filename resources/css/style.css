@@ -1,0 +1,276 @@
+/* universal styles */
+html {
+  font-size: 18px;
+  background-color: aliceblue;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  color: dimgray;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+}
+
+.icons {
+  display: inline-flex;
+  display: none;
+}
+
+/* top of page */
+
+.top {
+  background-image: url(../images/school.jpg);
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+
+}
+.menu-container {
+  background-color: rgba(240, 248, 255, 0.9);
+  height: 3.5rem;
+  border-bottom: solid maroon 0.2rem;
+}
+
+  /* right side */
+.menu-right {
+  display: inline-flex;
+  padding-left: 1.5rem;
+}
+
+.name {
+  display: inline-flex;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.logo {
+  position: relative;
+  top: 0.5rem;
+}
+
+  /* left side */
+.menu-left {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+#menu {
+  padding-right: 2rem;
+}
+
+#colmar {
+  color: maroon;
+}
+
+#academy {
+  color: gray;
+}
+
+  /* Welcome Container */
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+#welcome {
+  font-size: 3rem;
+  align-content: center;
+  position: relative;
+  top: 10rem;
+  border: solid maroon 0.1rem;
+  padding: 2rem 2rem;
+  background-color: rgba(240, 248, 255, 0.7)
+}
+
+  /* enroll button */
+.button {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
+
+}
+#button {
+  border: solid maroon 0.1rem;
+  padding: 1rem 1rem;
+  background-color: rgba(240, 248, 255, 0.7);
+  transition-property: color;
+  transition-duration: 900ms;
+}
+
+#button:hover {
+  color: maroon;
+}
+
+#menu:hover {
+  color: maroon;
+  transition-property: color;
+  transition-duration: 900ms;
+}
+
+  /* mobile version */
+
+@media only screen and (max-width: 700px) {
+  body{
+    background-color: aliceblue;
+  }
+
+  .menu-left {
+    display: none;
+  }
+  .top {
+    background-image: url(../images/school.jpg);
+    background-position: 40%;
+    height: 30rem;
+  }
+  /* welcome container */
+  #welcome {
+    font-size: 1.5rem;
+    text-align: center;
+
+  }
+
+  .button {
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .name {
+    display: none;
+  }
+
+  .icons {
+    display: inline-flex;
+    position: relative;
+    top: 0.8rem;
+  }
+  #icons {
+    padding-left: 3.5rem;
+  }
+}
+
+/*Section 2*/
+
+  /* left side */
+.left-column {
+  width: 45rem;
+  display: inline-block;
+  justify-content: center;
+
+}
+
+#library-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: maroon;
+}
+
+#quote,
+#author {
+  padding-left: 7rem;
+  font-size: 1.2rem;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#library-image {
+  width: 50rem;
+  margin-left: 2rem;
+}
+
+  /* right side */
+.right-column {
+  display: inline-block;
+  position: relative;
+  left: 12rem;
+  bottom: 3.9rem;
+  width: 35rem;
+}
+
+.orientation {
+  display: flex;
+  height: 10rem;
+}
+
+.campus,
+.speaker {
+  display: flex;
+  padding-top: 4rem;
+}
+
+#information {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+#information1 {
+  display: inline-block;
+  margin-left: 4.5rem;
+
+}
+
+#subtitle {
+  font-size: 1.4rem;
+  color: maroon;
+}
+
+#orientation {
+  width: 15rem;
+  border: solid maroon 0.2rem;
+}
+
+#campus,
+#speaker,
+#library-image {
+  border: solid maroon 0.2rem;
+}
+
+#campus {
+  width: 15rem;
+  height: 10rem;
+}
+
+#read-more:hover {
+    color: maroon;
+    transition-property: color;
+    transition-duration: 900ms;
+  }
+
+/* mobile version */
+
+/*@media only screen and (max-width: 1000px) {
+  .second-section {
+    position: relative;
+    top: 3rem;
+  }
+
+}*/
+
+@media only screen and (max-width: 700px) {
+  .left-column {
+    display: none;
+  }
+  #information {
+    display: inline-block;
+  }
+  .right-column {
+    position: relative;
+    top: 2rem;
+    width: 25%;
+  }
+
+
+}
