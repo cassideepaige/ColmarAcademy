@@ -251,25 +251,22 @@ html body {
 
 /* mobile version */
 
-/*@media only screen and (max-width: 1000px) {
-  .second-section {
-    position: relative;
-    top: 3rem;
-  }
-
-}*/
 
 @media only screen and (max-width: 480px) {
   .left-column {
     display: none;
   }
-  #information {
-    display: inline-block;
-  }
+
   .right-column {
+    width: 100%;
     position: relative;
     top: 2rem;
-    width: 25%;
+  }
+
+  .orientation,
+  .campus,
+  .speaker {
+    flex-direction: column;
   }
 
 
