@@ -192,12 +192,24 @@ html body {
 }
 
   /* right side */
-.right-column {
+/*.right-column {
   display: inline-block;
   position: relative;
   left: 12rem;
   bottom: 3.9rem;
   width: 35rem;
+}*/
+
+.right-column {
+  flex-direction: column;
+  display: inline-flex;
+  position: relative;
+  left: 15rem;
+  bottom: 2rem;
+}
+
+.second-section {
+  display: inline-flex;
 }
 
 .orientation {
@@ -215,12 +227,13 @@ html body {
 #information {
   display: inline-block;
   margin-left: 2rem;
+  width: 10rem;
 }
 
 #information1 {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-left: 4.5rem;
-
+  width: 10rem;
 }
 
 #subtitle {
@@ -258,17 +271,17 @@ html body {
     display: none;
   }
   .right-column {
-    width: 100%;
+    width: 0rem;
     padding-top: 10rem;
   }
-  #orientation,
+  /*#orientation,
   #campus,
   #speaker {
     align-items: flex-start;
     align-content: center;
     position: relative;
     left: 2rem;
-  }
+  }*/
   .orientation,
   .campus,
   .speaker {
@@ -276,8 +289,9 @@ html body {
     align-items: center;
     justify-content: center;
     position: relative;
-    right: 12rem;
-    width: 20rem;
+    right: 3rem;
+    /*right: 12rem;
+    width: 20rem;*/
   }
   .campus,
   .speaker {
@@ -287,13 +301,20 @@ html body {
     position: relative;
     bottom: 5rem;
   }
-  #speaker{
+  /*#speaker{
     position: relative;
     right: 1rem;
-  }
+  }*/
   #information,
   #information1 {
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    width: 15rem;
+  }
+  #information1 {
+    text-align: left;
+    position: relative;
+    right: 1.5rem;
   }
 
 
