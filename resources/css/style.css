@@ -206,9 +206,10 @@ html body {
 }
 
 .campus,
-.speaker {
+.speaker,
+.orientation {
   display: flex;
-  padding-top: 4rem;
+  padding: 2rem 0rem;
 }
 
 #information {
@@ -256,18 +257,41 @@ html body {
   .left-column {
     display: none;
   }
-
   .right-column {
     width: 100%;
-    position: relative;
-    top: 2rem;
+    padding-top: 10rem;
   }
-
+  #orientation,
+  #campus,
+  #speaker {
+    align-items: flex-start;
+  }
   .orientation,
   .campus,
   .speaker {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 12rem;
   }
+  .campus,
+  .speaker {
+    padding-top: 4rem;
+  }
+  .speaker {
+    position: relative;
+    bottom: 5rem;
+  }
+  #speaker{
+    position: relative;
+    right: 1rem;
+  }
+  #information,
+  #information1 {
+    text-align: center;
+  }
+
 
 
 }
