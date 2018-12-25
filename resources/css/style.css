@@ -24,6 +24,7 @@ html body {
 .top {
   background-image: url(../images/school.jpg);
   background-size: cover;
+  border-bottom: solid maroon 0.2rem;
   height: 50rem;
   width: 100%;
 
