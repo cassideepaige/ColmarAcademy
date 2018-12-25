@@ -337,6 +337,14 @@ html body {
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: rgb(240, 248, 255);
+  transition-property: color;
+  transition-duration: 900ms;
+}
+
+.class-container li:hover {
+  color: maroon;
+  transition-property: color;
+  transition-duration: 900ms;
 }
 
 
@@ -373,9 +381,6 @@ html body {
     position: relative;
     bottom: 5rem;
   }
-
-
-
 }
 
 /* footer */
