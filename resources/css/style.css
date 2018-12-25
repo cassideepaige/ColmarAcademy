@@ -312,38 +312,49 @@ html body {
 }
 
 /* third section */
-
 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  color: maroon;
+  text-decoration: underline;
+  padding-bottom: 0.2rem;
 }
 
-.third-section {
-  background-color: rgb(248, 248, 255);
-
+.class-container p {
+  text-align: center;
+  color: maroon;
+  font-size: 2rem;
 }
 
-.row-1 {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
+.class-container li {
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
   align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: rgb(240, 248, 255);
 }
 
-#class-images {
-  width: 55%;
-}
 
-#class-images1 {
-  height: 25%;
-  width: 40%;
+.class-container {
+  background-image: url(../images/charms.jpeg);
+  opacity: 40%;
+  border: solid maroon 0.2rem;
+  display: inline-block;
+  align-items: center;
+  width: 60rem;
+  height: 30rem;
+  position: relative;
+  left: 16rem;
+  margin-bottom: 5rem;
 }
 
 /* footer */
 .footer {
   display: flex;
   border-top: solid maroon 0.2rem;
-  background-color: rgba(240, 248, 255, 0.9);
+  background-color: rgba(128,0,0,0.9);
+  color: rgb(240, 248, 255);
   width: 100%;
   align-items: stretch;
 }
